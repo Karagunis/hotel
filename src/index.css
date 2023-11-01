@@ -13,13 +13,16 @@
     @apply font-primary text-[45px] mb-4;
   }
   .h3 {
-    @apply text-2xl font-primary font-semibold tracking-[1px] mb-2;
+    @apply text-2xl font-primary font-semibold tracking-[1px] mb-3;
   }
   .btn {
     @apply text-[15px] tracking-[3px] font-tertiary uppercase text-white flex-1 transition-all px-8 flex justify-center items-center;
   }
   .btn-sm {
     @apply h-[48px];
+  }
+  .btn-md {
+    @apply h-[54px];
   }
   .btn-lg {
     @apply h-[60px];

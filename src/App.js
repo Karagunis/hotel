@@ -1,7 +1,31 @@
-import React from 'react';
+// components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const App = () => {
-  return <div>react app</div>;
-};
+// pages
+import Home from "./pages/Home";
+import RoomDetails from "./pages/RoomDetails";
+
+// react router
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/room/:id",
+    element: <RoomDetails />,
+  },
+]);
+
+const App = () => (
+  <div className="bg-stone-100">
+    <Header />
+    <RouterProvider router={router} />
+    <Footer />
+  </div>
+);
 
 export default App;
